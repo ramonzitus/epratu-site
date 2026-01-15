@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EPRATU — Navegador de Futuros</title>
+  <meta name="description" content="EPRATU é um metalore para decidir e criar em tempos complexos. Comece pelo Diagnóstico do Navegador de Futuros." />
+  <meta property="og:title" content="EPRATU — Navegador de Futuros" />
+  <meta property="og:description" content="Um instrumento prático de clareza para decisões em cenários instáveis. Manifesto + diagnóstico." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root { --black:#0b0b0b; --red:#c00000; --bg:#ffffff; --muted:#555; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:var(--bg);color:var(--black);line-height:1.35}
+    a{color:inherit}
+    .wrap{max-width:980px;margin:0 auto;padding:22px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:14px;border-bottom:2px solid var(--black);padding:14px 0}
+    .brand{display:flex;align-items:baseline;gap:10px}
+    .logo{font-weight:900;letter-spacing:0.08em}
+    .tag{font-size:0.95rem;color:var(--muted)}
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{font-weight:700;text-decoration:none;border-bottom:2px solid transparent}
+    nav a:hover{border-bottom-color:var(--red)}
+    .hero{padding:30px 0 10px;display:grid;grid-template-columns:1.15fr 0.85fr;gap:22px}
+    h1{margin:0 0 12px;font-size:2rem;letter-spacing:-0.02em}
+    .lead{font-size:1.05rem;color:#1a1a1a}
+    .pill{display:inline-block;border:2px solid var(--black);padding:6px 10px;font-weight:800}
+    .pill.red{border-color:var(--red);color:var(--red)}
+    .card{border:2px solid var(--black);padding:16px}
+    .ctaRow{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+    .btn{display:inline-block;padding:12px 16px;border:2px solid var(--black);background:#fff;color:var(--black);
+         text-decoration:none;font-weight:900;cursor:pointer}
+    .btn.primary{background:var(--black);color:#fff}
+    .btn.secondary{border-color:var(--red);color:var(--red)}
+    .small{font-size:0.92rem;color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin:18px 0}
+    .col6{grid-column:span 6}
+    .col12{grid-column:span 12}
+    @media (max-width:860px){ .hero{grid-template-columns:1fr} .col6{grid-column:span 12} }
+    .kicker{font-weight:900;text-transform:uppercase;letter-spacing:0.12em;font-size:0.8rem;color:var(--red)}
+    .hr{height:2px;background:var(--black);margin:18px 0}
+    .list{margin:10px 0 0;padding-left:18px}
+    .diagram{display:grid;gap:10px}
+    .layer{border:2px solid var(--black);padding:10px;display:flex;align-items:center;justify-content:space-between}
+    .layer b{letter-spacing:0.02em}
+    .dot{width:10px;height:10px;background:var(--red);display:inline-block}
+    form{margin-top:10px}
+    label{display:block;font-weight:800;margin:8px 0 6px}
+    input{width:100%;padding:10px;border:2px solid var(--black);font-size:1rem}
+    footer{border-top:2px solid var(--black);padding:14px 0;margin-top:22px;color:var(--muted);font-size:0.92rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">EPRATU</div>
+        <div class="tag">metalore para navegar complexidade</div>
+      </div>
+      <nav>
+        <a href="/navegador.html">Diagnóstico</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#captura">Entrar</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="kicker">Manifesto + Ferramenta</div>
+        <h1>Nem tudo que importa pode ser otimizado.<br>Mas tudo que importa pode ser navegado.</h1>
+        <p class="lead">
+          O <b>EPRATU</b> é um projeto para quem precisa <b>decidir</b>, <b>agir</b> e <b>criar</b> em tempos de alta complexidade.
+          Aqui, tecnologia não é culto: é <b>autonomia</b>. Futuro não é fantasia: é <b>responsabilidade</b>.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="/navegador.html">Começar pelo Diagnóstico (R$ 97)</a>
+          <a class="btn secondary" href="#captura">Receber atualizações do Navegador</a>
+        </div>
+        <p class="small">Solarpunk + anarcotranshumanismo + regeneração: sem estética vazia. Método aplicável.</p>
+      </div>
+
+      <div class="card">
+        <div class="pill">5 domínios interdependentes</div>
+        <div style="height:10px"></div>
+        <div class="diagram" aria-label="Diagrama dos 5 domínios">
+          <div class="layer"><b>Geosfera</b><span class="dot" title="energia"></span></div>
+          <div class="layer"><b>Hidrosfera</b><span class="dot"></span></div>
+          <div class="layer"><b>Biosfera</b><span class="dot"></span></div>
+          <div class="layer"><b>Tecnosfera</b><span class="dot"></span></div>
+          <div class="layer"><b>Noosfera</b><span class="dot"></span></div>
+        </div>
+        <p class="small">
+          Uma leitura de futuro decente começa no chão (matéria) e volta à decisão (consciência).
+        </p>
+      </div>
+    </section>
+
+    <div class="hr"></div>
+
+    <section id="como-funciona" class="grid">
+      <div class="col6 card">
+        <div class="pill red">Navegador de Futuros</div>
+        <p>
+          Um instrumento de <b>história preditiva aplicada</b> + leitura sistêmica.
+          Não é “adivinhação”. É <b>padrão recorrente</b>, causalidade, e escolhas com custo real.
+        </p>
+        <ul class="list">
+          <li>Você organiza o caos em uma <b>bússola de decisão</b>.</li>
+          <li>Você identifica <b>forças</b>, <b>riscos</b> e <b>pontos de alavancagem</b>.</li>
+          <li>Você sai com um <b>próximo passo</b> executável.</li>
+        </ul>
+      </div>
+
+      <div class="col6 card">
+        <div class="pill">O que entra no EPRATU</div>
+        <p class="small">O Navegador é a porta de entrada. Depois, o ecossistema se abre.</p>
+        <ul class="list">
+          <li><b>Infoprodutos</b> (métodos, kits, guias) financiando projetos reais.</li>
+          <li><b>Consumo Regenerativo</b> como infraestrutura econômica.</li>
+          <li><b>Compostonautas</b> e outros projetos regenerativos plugados ao mapa.</li>
+          <li><b>Web3</b> como camada de coordenação (quando fizer sentido, sem fetiche).</li>
+        </ul>
+      </div>
+
+      <div class="col12 card" id="captura">
+        <div class="pill red">Entrar na lista</div>
+        <p class="small">
+          Receba atualizações do Navegador, versões do método e materiais curtos (sem spam).
+        </p>
+
+        <form name="leads-epratu" method="POST" data-netlify="true" action="/obrigado.html">
+          <input type="hidden" name="form-name" value="leads-epratu" />
+          <div class="grid">
+            <div class="col6">
+              <label for="nome">Nome</label>
+              <input id="nome" name="nome" type="text" placeholder="Seu nome" required />
+            </div>
+            <div class="col6">
+              <label for="email">E-mail</label>
+              <input id="email" name="email" type="email" placeholder="voce@exemplo.com" required />
+            </div>
+            <div class="col12">
+              <button class="btn primary" type="submit">Quero entrar</button>
+              <span class="small">Ao entrar, você concorda com a política de privacidade.</span>
+            </div>
+          </div>
+        </form>
+
+        <p class="small"><a href="/privacidade.html">Política de privacidade</a></p>
+      </div>
+    </section>
+
+    <footer>
+      © <span id="y"></span> EPRATU. “É você, o seu nicho.” • <a href="/privacidade.html">Privacidade</a>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
