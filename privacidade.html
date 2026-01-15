@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Privacidade — EPRATU</title>
+  <style>
+    :root { --black:#0b0b0b; --red:#c00000; --bg:#fff; --muted:#555; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:var(--bg);color:var(--black);line-height:1.5}
+    .wrap{max-width:860px;margin:0 auto;padding:22px}
+    header{border-bottom:2px solid var(--black);padding:14px 0}
+    a{color:inherit}
+    .logo{font-weight:900;letter-spacing:0.08em;text-decoration:none}
+    h1{margin:16px 0 10px}
+    .card{border:2px solid var(--black);padding:16px;margin-top:16px}
+    .small{color:var(--muted);font-size:0.95rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="logo" href="/index.html">EPRATU</a>
+    </header>
+
+    <div class="card">
+      <h1>Política de privacidade (MVP)</h1>
+      <p>
+        O EPRATU coleta apenas os dados necessários para comunicação e entrega de conteúdo: <b>nome</b> e <b>e-mail</b>
+        (quando você preenche formulários no site).
+      </p>
+      <p>
+        Usamos essas informações para:
+        <ul>
+          <li>Enviar atualizações do Navegador de Futuros e materiais relacionados.</li>
+          <li>Responder solicitações e dar suporte ao Diagnóstico.</li>
+        </ul>
+      </p>
+      <p>
+        Você pode pedir remoção dos seus dados a qualquer momento respondendo a um e-mail enviado pelo EPRATU.
+      </p>
+      <p class="small">
+        Este site é hospedado no Netlify. Formulários podem ser processados pela infraestrutura do Netlify.
+      </p>
+    </div>
+
+    <p class="small">Última atualização: <span id="d"></span></p>
+  </div>
+
+  <script>
+    const d = new Date();
+    document.getElementById('d').textContent = d.toLocaleDateString('pt-BR');
+  </script>
+</body>
+</html>
