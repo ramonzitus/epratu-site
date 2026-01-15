@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Obrigado — EPRATU</title>
+  <meta name="description" content="Confirmação de cadastro no EPRATU e próximos passos." />
+  <style>
+    :root { --black:#0b0b0b; --red:#c00000; --bg:#fff; --muted:#555; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;background:var(--bg);color:var(--black);line-height:1.35}
+    .wrap{max-width:860px;margin:0 auto;padding:22px}
+    header{border-bottom:2px solid var(--black);padding:14px 0}
+    a{color:inherit}
+    .logo{font-weight:900;letter-spacing:0.08em;text-decoration:none}
+    .card{border:2px solid var(--black);padding:16px;margin-top:16px}
+    .pill{display:inline-block;border:2px solid var(--black);padding:6px 10px;font-weight:900}
+    .pill.red{border-color:var(--red);color:var(--red)}
+    .btn{display:inline-block;padding:12px 16px;border:2px solid var(--black);background:var(--black);color:#fff;
+         text-decoration:none;font-weight:900;margin-top:10px}
+    .small{font-size:0.92rem;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="logo" href="/index.html">EPRATU</a>
+    </header>
+
+    <div class="card">
+      <div class="pill red">Cadastro recebido</div>
+      <h1 style="margin:10px 0 8px">Obrigado.</h1>
+      <p>
+        Você entrou na lista do <b>Navegador de Futuros</b>. A partir daqui, você vai receber atualizações curtas e úteis (sem spam).
+      </p>
+      <p class="small">
+        Se você acabou de comprar o Diagnóstico, pode voltar para a página de vendas e seguir as instruções.
+      </p>
+      <a class="btn" href="/navegador.html">Ir para o Diagnóstico</a>
+      <p class="small">Dica: salve esta página nos favoritos.</p>
+    </div>
+
+    <div class="card">
+      <div class="pill">Próximo passo recomendado</div>
+      <p>
+        Se você quer começar com ação: faça o Diagnóstico. Se quiser só acompanhar o metalore por enquanto, tudo bem —
+        mas não se engane: clareza vem de <b>movimento</b>.
+      </p>
+      <p class="small">
+        © <span id="y"></span> EPRATU • <a href="/privacidade.html">Privacidade</a>
+      </p>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
